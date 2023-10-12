@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		table, th, td {
+			border: 1px solid blue;
+		}
+		h1 {text-align: center;}
+		p {text-align: left;}
+		.myDiv {
+		  border: 5px outset red;
+		  background-color: lightblue;    
+		  text-align: center;
+		}
+
+		
+	</style>
+</head>	
+<body>
+	<h1 style="color:blue; background-color:greenyellow">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h1>
+
+	<!--this is a paragraph-->
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's sta ndard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+	<img src="images/study.jpg" alt="laptop">
+	<p><cite The Laptop</cite> by XYZ</p>
+
+	<a href="index.html" target="blank">Home</a>
+	<a href="about.html" target="blank">About</a>
+	<a href="#" target="blank">Facebook</a>
+
+	 <h2>abbr</h2>
+	 <p><abbr title="hyper text markup language">HTML</abbr>, a system used to mark text for World Wide Web pages in order to obtain colors, style, pictures, etc.</p>
+
+	 <h2 style="color:blue; background-color:greenyellow">Address</h2>
+	 <address>
+	 	written by <a href="mailto: contact@example.com">Rakhi</a>.<br>
+	 	Visit us at: <br>
+	 	Example.com<br>
+	 </address>
+	 <h2 id="h2">map and area</h2>
+
+	 	<p>lick on the computer or on the floor to go to a new page and read more about the topic:</p>
+	 	<img src="images/laptop.jpg" alt="laptop" usemap="#laptop" width="400" height="380">
+		 	<map name="laptop">
+		 		<area shape="rect" coords="34,44,270,350" alt="laptop" href="about.html">
+		 		<area shape="rect" coords="290,172,333,250" alt="floor" href="index.html">
+		 	</map>
+	 
+	<h2>artical element</h2>		
+	 	<article>
+	 			<h3>What is Lorem Ipsum?</h3>
+	 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	 	</article>
+	 <h2 class="heading2 border">aside element</h2>
+	 	<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages!</p>
+	 	<aside>
+	 		<h4>Why do we use it?</h4>
+	 		<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using </p>
+	 	</aside>
+
+	 <h2 class="heading2">audio element</h2>	
+
+	 	<p>click the play button</p>
+	 	<audio controls>
+	 		<source src="audio/relaxing.mp3" type="audio/mpeg">
+	 		Your browser does not support the audio element.	
+	 		</audio>
+
+	<h2> b element </h2> 
+		<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. - <b>Why do we use it</b>.</p> 		
+
+	<h2>bdi element</h2>	
+		<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		<ul>
+			<li>user <bdi> hrefs</bdi>: 60 points</li>
+		</ul>
+	<h2>bdo element</h2>
+		<p>This paragraph will go left-to-right.</p>
+		<p><bdo dir="rtl"> Hello World </bdo></p>	
+
+	<h2>br element</h2>
+		<p>Lorem ipsum dolor sit amet<br> consectetur adipiscing elit<br> sed do eiusmod tempor <br>dolore magna aliqua</p>
+
+	<h2>button element</h2>	
+		<button type="button" onclick="alert(Hello World">Click Me</button>
+
+	<h2>canvas</h2>	
+		<canvas id="images/laptop width="300" height="150" style="border: 1px solid blue;"></canvas>
+	<h2>caption element</h2>	
+		<table>
+			<caption>Mark Sheet</caption>
+			<tr>
+				<th>Student</th>
+				<th>English</th>
+			</tr>
+			<tr>
+				<td>ABC</td>
+				<td>80</td>
+			</tr>
+			<tr>
+				<td>JKL</td>
+				<td>90</td>
+			</tr>
+		</table>
+		<p>Lorem Ipsum<code> dummy text </code>  is simply dummy text of the printing and typesetting industry</p>
+
+	<h2>col element</h2>	
+		<table>
+  			<colgroup>
+			    <col span="2" style="background-color:green;">
+			    <col style="background-color:greenyellow;">
+  			</colgroup>
+  			<tr>
+			    <th>student</th>
+			    <th>subject</th>
+			    
+  			</tr>
+  			<tr>
+			    <td>ABC</td>
+			    <td>English</td>
+			    
+		  </tr>
+		  <tr>
+		    <td>JKL</td>
+		    <td>Math</td>
+		    
+		  </tr>
+		</table>
+	<h2>data element</h2>
+		<p>The following example displays product names but also associates each name with a product number: </p>
+			<ul>
+				<li><data value="100">Chicken</data></li>
+				<li><data value="200">Mutton</data></li>
+
+			</ul>
+
+	<h2>Datalist</h2>	
+		<form action="/index.html" method="get">
+			<level for="browser">Choose Your browser from the lists:</level>
+			<input list="browsers" name="browser" id="browser">
+			<datalist id="browsers">
+				<option value="Firefox">
+				<option value="Chrome">
+				<option value="Opera">	
+				
+			</datalist>
+			<input type="Submit">
+			
+		</form>	
+
+	<h2>dl, dd and dt element</h2>	
+		<p>These elements are used to create a description list: </p>
+		<dl>
+			<dt>Tea</dt>
+			<dd>milk</dd>
+			<dt>Coffee</dt>
+			<dd>Sugar</dd>
+
+		</dl>
+	<h2>del element</h2>	
+			<p>My favorite hobby is<del> watching movie</del><ins> reading book</ins>!</p>
+
+	<h2>details element</h2>
+		<details>
+			<summary>Lorem Ipsum?</summary>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</details>	
+	<h2>dfn element</h2>
+		<p><dfn>HTML</dfn>is the standard markup language for creating web pages.</p>
+	<h2>dialog element</h2>	
+		<p>standard markup language</p>
+		<p>standard markup language</p>
+
+		<dialog open>the standard markup language for creating web pages</dialog>
+
+		<p>standard markup language</p>
+		<p>standard markup language</p>
+
+	<h2>div element</h2>
+		<div class="myDiv">
+			<h3>standard markup language</h3>
+			<p>standard markup language</p>
+		</div>
+		<p>standard markup language</p>	
+	<h2>em element</h2>	
+		<p>standard <em>markup</em> language</p>
+	<h2>Fieldset Element</h2>
+		<form action="/index.html">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label for="Name">Name:</lebel>
+
+				<input type="text" id="name" name="name"><br>
+				<label for="email">Email:</label>
+ 				 <input type="email" id="email" name="email"><br><br>
+
+ 				 <label for="birthday">Birthday:</label>
+  				<input type="date" id="birthday" name="birthday"><br><br>
+
+  				<input type="submit" value="Submit">
+			</fieldset>
+	<h2>figure and figcaption element</h2>	
+		<figure>
+			<img src="images/laptop.jpg" alt="laptop" style="width:50%">
+			<figcaption>Fig.1 - Laptop.</figcaption>
+
+		</figure>
+	<h2>form element</h2>
+			<form action="/action_page.php">
+			  <label for="fname">First name:</label>
+			<input type="text" id="fname" name="fname"><br><br>
+			  <label for="lname">Last name:</label>
+			 <input type="text" id="lname" name="lname"><br><br>
+			  <input type="submit" value="Submit">
+			</form>
+
+			<p>Click the "Submit" button</p>
+
+	<h2>hr</h2>		
+		<h3>What is Lorem Ipsum?</h3>
+
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap </p>
+		<hr>
+
+		<p> centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus Page</p>
+		<hr>
+	<h2>i element</h2>	
+
+		<p><i>Lorem ipsum</i>is the most popular filler text in history.</p>
+
+		<p>It is a long <i>established</i> fact that a reader will be distracted by the readable content.</p>
+	<h2>iframe element</h2>
+
+		<iframe src="index.html" title="HTML">
+		</iframe>	
+	<h2>kbd element</h2>
+
+		<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+		<p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>	
+	<h2>Video element</h2>	
+		<video width="320" height="240" controls>
+			<source src="audio/video.mp4" type="video/mp4">
+			
+		</video>
+
+
+
+
+
+</body>
+</html>	
